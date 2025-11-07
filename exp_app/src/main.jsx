@@ -1,9 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Curriculum from './hdv.jsx' 
+import App from './componentes/App.jsx' 
+// import Curriculum from './hdv.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Curriculum /> 
+    <App /> 
+    {/* <Curriculum />  */}
   </StrictMode>,
 )
