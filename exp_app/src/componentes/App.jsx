@@ -1,17 +1,17 @@
-import Header from "./CabeceraCV";
-import About from "./Perfil";
-import Skills from "./Educacion";
-import Contact from "./Experiencia";
+import Cabecera from "./CabeceraCV";
+import Perfil from "./Perfil";
+import Educacion from "./Educacion";
+import Experiencia from "./Experiencia";
 import Foto from "./Foto";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="container">
-      <Header />
-      <About />
-      <Skills />
-      <Contact />
+      <Cabecera />
+      <Perfil />
+      <Educacion />
+      <Experiencia />
       <Foto />
     </div>
 );

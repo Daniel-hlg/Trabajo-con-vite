@@ -1,5 +1,5 @@
 # Nombre del proyecto
-Mi hoja de vida.
+Mi hoja de vida
 
 # Interfaz grafica
 ![alt text](image.png)
