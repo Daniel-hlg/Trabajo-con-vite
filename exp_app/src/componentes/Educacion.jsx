@@ -1,18 +1,41 @@
-export default function Skills() {
+function Educacion() {
+  const educacion = [
+    {
+      institucion: "I.E Alberto Diaz Muñoz",
+      curso: "Bachiller Académico",
+      año: 2024,
+    },
+    {
+      institucion: "SENA - Centro de Tecnología de la Manufactura Avanzada (CTMA)",
+      curso: "Tecnólogo en Análisis y Desarrollo de Software (ADSO)",
+      año: "2025 - 2027",
+    },
+    {
+      institucion: "SENA",
+      curso: "Inglés Nivel 1",
+      año: 2025,
+    },
+    {
+      institucion: "SENA",
+      curso: "Inglés Nivel 2",
+      año: 2025,
+    },
+  ];
+
   return (
-    <section>
-      <h2>Tecnología en Análisis y Desarrollo de Software — SENA (2025 - 2027)</h2>
-      <p>Formación enfocada en el desarrollo de aplicaciones web y móviles, bases de datos y metodologías ágiles para la gestión de proyectos de software.</p>
-
-      <h2>Bachillerato Académico — I.E Alberto Diaz Muñoz (2024)</h2>
-      <p>Finalicé mis estudios de educación media con énfasis en ciencias y tecnología, desarrollando habilidades en trabajo en equipo y pensamiento lógico.</p>
-
-      <h2>Curso de Inglés Nivel 1 — SENA (2025)</h2>
-      <p>Introducción al idioma inglés con enfoque en vocabulario básico, estructuras gramaticales y comunicación oral sencilla.
-      </p>
-
-      <h2>Curso de Inglés Nivel 2 — SENA (2025)</h2>
-      <p>Continuación del aprendizaje del idioma, con énfasis en comprensión auditiva, lectura y conversación a nivel intermedio básico.</p>
-    </section>
-);
+    <div>
+      <section>
+        <h2>Educación</h2>
+        <ul>
+          {educacion.map((estudio, index) => (
+            <li key={index}>
+              <strong>{estudio.curso}</strong> - {estudio.institucion} ({estudio.año})
+            </li>
+          ))}
+      </ul>
+      </section>
+    </div>
+  );
 }
+
+export default Educacion;
