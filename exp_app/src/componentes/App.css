@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(58, 113, 85);
+  background-color: whitesmoke;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 section, header {
-  background: white;
+  background: rgb(191, 191, 200);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -33,4 +33,3 @@ li::before {
   content: "▸ ";
   color: #007bff;
 }
-
