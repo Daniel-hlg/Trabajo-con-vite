@@ -1,18 +1,30 @@
-export default function Contact() {
+function Experiencia() {
+  const experiencias = [
+    { cargo: "Desarrollador Front-End", empresa: "SENA", año: 2025, descripcion: "Desarrollo de componentes en React." },
+    { cargo: "Diseñador UI", empresa: "SENA", año: 2025, descripcion: "Diseño de prototipos en Figma." },
+    { cargo: "Auxiliar de Software", empresa: "SENA", año: 2025, descripcion: "Apoyo en proyectos Node.js." },
+    { cargo: "Practicante de Sistemas", empresa: "SENA", año: 2025, descripcion: "Documentación de procesos técnicos." },
+    { cargo: "Soporte Técnico", empresa: "SENA", año: 2025, descripcion: "Atención y resolución de incidentes." },
+    { cargo: "Diseñador Web", empresa: "SENA", año: 2025, descripcion: "Maquetación de sitios web HTML/CSS." },
+    { cargo: "Desarrollador React", empresa: "SENA", año: 2025, descripcion: "Implementación de interfaces modernas." },
+    { cargo: "Analista Junior", empresa: "SENA", año: 2025, descripcion: "Análisis de requerimientos de software." },
+    { cargo: "Tutor Tecnológico", empresa: "SENA", año: 2025, descripcion: "Apoyo en formación digital." },
+    { cargo: "Voluntario Tech", empresa: "SENA", año: 2025, descripcion: "Charlas sobre desarrollo web." }
+  ];
+
   return (
-    <section>
-      <h2>Desarrollador Front-End Jr. — TechNova Solutions (2025)</h2>
-      <p>Participé en la creación de una página web corporativa utilizando React y Vite, implementando componentes reutilizables y optimizando el rendimiento. Colaboré con el equipo de diseño para asegurar una experiencia de usuario fluida y moderna.
-      </p>
-
-      <h2>Asistente de Desarrollo Web — CodeFactory (2024)</h2>
-      <p>Apoyé en la maquetación de sitios web con HTML, CSS y JavaScript. Realicé pruebas de compatibilidad entre navegadores y ayudé a mejorar la accesibilidad del contenido.</p>
-
-      <h2>Proyecto Académico: “Gestor de Tareas” — SENA (2024)</h2>
-      <p>Desarrollé una aplicación web para gestionar tareas diarias, empleando React para el manejo de estados y componentes. Implementé un diseño responsivo con CSS y funciones básicas de CRUD.</p>
-
-      <h2>Prácticas en InnovApp — (2023)</h2>
-      <p>Colaboré en el desarrollo de una aplicación web de portafolio personal, utilizando Vite como herramienta de compilación y GitHub para control de versiones. Aprendí sobre organización de código y despliegue en entornos web.</p>
-    </section>
-);
+    <div>
+      <section>
+        <h2>Experiencia</h2>
+        {experiencias.map((exp) => (
+          <div style={{ marginBottom: "10px" }}>
+            <strong>{exp.cargo}</strong> - {exp.empresa} ({exp.año})<br />
+            <em>{exp.descripcion}</em>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 }
+
+export default Experiencia;
