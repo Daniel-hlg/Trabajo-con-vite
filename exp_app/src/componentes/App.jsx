@@ -3,6 +3,7 @@ import Perfil from "./Perfil";
 import Educacion from "./Educacion";
 import Experiencia from "./Experiencia";
 import Foto from "./Foto";
+import StackTecnologias from "./StackTecnologias";
 import "./App.css";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Perfil />
       <Educacion />
       <Experiencia />
+      <StackTecnologias />
       <Foto />
     </div>
 );
