@@ -1,33 +1,25 @@
-function StackTecnologias() {
-  const tecnologias = [
-    "HTML",
-    "CSS",
-    "Git",
-    "GitHub",
-    "Vite",
-  ];
+import React from "react";
 
-  const getColor = (colores) => {   
-    if (colores === "HTML") return "#E44D26";       
-    if (colores === "CSS") return "#2965F1";                  
-    if (colores === "Git") return "#F34F29";        
-    if (colores === "GitHub") return "#333";        
-    if (colores === "Vite") return "#646CFF";      
-    return "#ccc";                             
+function StackTecnologias({ tecnologias }) {
+  const getColor = (color) => {
+    if (color === "CSS") return "#61DBFB";
+    if (color === "JavaScript") return "#f7921eff";
+    if (color === "HTML") return "#E44D26";
+    if (color === "ControlDeVersiones") return "#2965F1";
+    if (color === "Vite") return "#b852b3ff";
   };
 
   return (
     <section>
-      {tecnologias.map((colores, index) => (
+      <h1>Tecnologias</h1>
+      {tecnologias.map((colores) => (
         <span
-          key={index}
           style={{
             backgroundColor: getColor(colores),
-            color: colores === "JavaScript" ? "black" : "white",
-            padding: "10px 12px",
-            margin: "8px",
+            color: colores === "JavaScript" ? "white" : "black",
+            padding: "8px 12px",
+            margin: "6px",
             borderRadius: "15px",
-            display: "inline-block",
             fontWeight: "bold",
           }}
         >
