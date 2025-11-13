@@ -1,16 +1,15 @@
-export default function Header() {
-  return (
-    <header>
-      <h1>Daniel Steven Holguín Soto</h1>
-      <p>Desarrollador Front-End Jr.</p>
+import React from "react";
 
-      <h2>Contacto</h2>
-        <ul>
-          <li>holguinsotodanielsteven@gmail.com</li>
-          <li>3127927098</li>
-          <li>T.I 1020115756</li>
-          <li>Colombia - Medellín</li>
-        </ul>
-    </header>
-);
+function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
+  return (
+    <section>
+      <h1>{nombre}</h1>
+      <p>{cargo}</p>
+      <p>{ciudad}</p>
+      <p>{contacto}</p>
+    </section>
+  );
 }
+
+export default CabeceraCV;
+
